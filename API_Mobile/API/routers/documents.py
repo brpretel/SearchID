@@ -11,8 +11,8 @@ from .auth import get_current_user, get_user_exception
 
 
 router = APIRouter(
-    prefix="/todos",
-    tags=["todos"],
+    prefix="/Documents",
+    tags=["Documents"],
     responses={404: {"description": "Not found"}}
 )
 
@@ -27,16 +27,15 @@ def get_db():
         db.close()
 
 
-class Todo(BaseModel):
-    title: str
-    description: Optional[str]
-    priority: int = Field(gt=0, lt=6, description="The priority must be between 1-5")
-    complete: bool
+class Documents(BaseModel):
+    document_type: str
+    numero_id: str
+    status: bool
 
 
 @router.get("/")
 async def read_all(db: Session = Depends(get_db)):
-    return db.query(models.Todos).all()
+    return db.query(models.Documents).all()
 
 
 @router.get("/user")
@@ -44,89 +43,87 @@ async def read_all_by_user(user: dict = Depends(get_current_user),
                            db: Session = Depends(get_db)):
     if user is None:
         raise get_user_exception()
-    return db.query(models.Todos)\
-        .filter(models.Todos.owner_id == user.get("id"))\
+    return db.query(models.Documents)\
+        .filter(models.Documents.owner_id == user.get("id"))\
         .all()
 
 
-@router.get("/{todo_id}")
-async def read_todo(todo_id: int,
+@router.get("/{document_id}")
+async def read_document(document_id: int,
                     user: dict = Depends(get_current_user),
                     db: Session = Depends(get_db)):
     if user is None:
         raise get_user_exception()
-    todo_model = db.query(models.Todos)\
-        .filter(models.Todos.id == todo_id)\
-        .filter(models.Todos.owner_id == user.get("id"))\
+    document_model = db.query(models.Documents)\
+        .filter(models.Documents.id == document_id)\
+        .filter(models.Documents.owner_id == user.get("id"))\
         .first()
-    if todo_model is not None:
-        return todo_model
+    if document_model is not None:
+        return document_model
     raise http_exception()
 
 
 @router.post("/")
-async def create_todo(todo: Todo,
+async def create_document(document: Documents,
                       user: dict = Depends(get_current_user),
                       db: Session = Depends(get_db)):
     if user is None:
         raise get_user_exception()
-    todo_model = models.Todos()
-    todo_model.title = todo.title
-    todo_model.description = todo.description
-    todo_model.priority = todo.priority
-    todo_model.complete = todo.complete
-    todo_model.owner_id = user.get("id")
+    document_model = models.Documents()
+    document_model.document_type = document.document_type
+    document_model.numero_id = document.numero_id
+    document_model.status = document.status
+    document_model.owner_id = user.get("id")
 
-    db.add(todo_model)
+    db.add(document_model)
     db.commit()
 
     return successful_response(201)
 
 
-@router.put("/{todo_id}")
-async def update_todo(todo_id: int,
-                      todo: Todo,
+@router.put("/{document_id}")
+async def update_document(document_id: int,
+                      document: Documents,
                       user: dict = Depends(get_current_user),
                       db: Session = Depends(get_db)):
     if user is None:
         raise get_user_exception()
 
-    todo_model = db.query(models.Todos)\
-        .filter(models.Todos.id == todo_id)\
-        .filter(models.Todos.owner_id == user.get("id"))\
+    document_model = db.query(models.Documents)\
+        .filter(models.Documents.id == document_id)\
+        .filter(models.Documents.owner_id == user.get("id"))\
         .first()
 
-    if todo_model is None:
+    if document_model is None:
         raise http_exception()
 
-    todo_model.title = todo.title
-    todo_model.description = todo.description
-    todo_model.priority = todo.priority
-    todo_model.complete = todo.complete
+    document_model.document_type = document.document_type
+    document_model.numero_id = document.numero_id
+    document_model.status = document.status
 
-    db.add(todo_model)
+    db.add(document_model)
     db.commit()
 
     return successful_response(200)
 
 
-@router.delete("/{todo_id}")
-async def delete_todo(todo_id: int,
+@router.delete("/{document_id}")
+async def delete_document(document_id: int,
                       user: dict = Depends(get_current_user),
                       db: Session = Depends(get_db)):
     if user is None:
         raise get_user_exception()
 
-    todo_model = db.query(models.Todos)\
-        .filter(models.Todos.id == todo_id)\
-        .filter(models.Todos.owner_id == user.get("id"))\
+    document_model = db.query(models.Documents)\
+        .filter(models.Documents.id == document_id)\
+        .filter(models.Documents.owner_id == user.get("id"))\
         .first()
 
-    if todo_model is None:
+    if document_model is None:
         raise http_exception()
 
-    db.query(models.Todos)\
-        .filter(models.Todos.id == todo_id)\
+    db.query(models.Documents)\
+        .filter(models.Documents.id == document_id)\
         .delete()
 
     db.commit()
@@ -142,7 +139,7 @@ def successful_response(status_code: int):
 
 
 def http_exception():
-    return HTTPException(status_code=404, detail="Todo not found")
+    return HTTPException(status_code=404, detail="Document not found")
 
 
 

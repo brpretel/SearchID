@@ -14,17 +14,16 @@ class Users(Base):
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
 
-    todos = relationship("Todos", back_populates="owner")
+    documents = relationship("Documents", back_populates="owner")
 
 
-class Todos(Base):
-    __tablename__ = "todos"
+class Documents(Base):
+    __tablename__ = "documents"
 
     id = Column(Integer, primary_key=True, index=True)
-    title = Column(String)
-    description = Column(String)
-    priority = Column(Integer)
-    complete = Column(Boolean, default=False)
+    document_type = Column(String)
+    numero_id = Column(String)
+    status = Column(Boolean)
     owner_id = Column(Integer, ForeignKey("users.id"))
 
-    owner = relationship("Users", back_populates="todos")
+    owner = relationship("Users", back_populates="documents")
