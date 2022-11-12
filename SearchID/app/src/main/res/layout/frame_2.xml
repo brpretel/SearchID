@@ -32,20 +32,6 @@
 				android:layout_height="wrap_content"
 				>
 
-				<View   android:id="@+id/_bg__frame_2_ek2"
-					android:background="@drawable/_bg__frame_2_ek2_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="392dp"
-					android:layout_height="731dp" />
-
-				<View   android:id="@+id/rectangle2"
-					android:background="@drawable/rectangle2_shape"
-					 android:layout_marginStart="0dp"
-					android:layout_marginTop="0dp"
-					android:layout_width="392dp"
-					android:layout_height="731dp" />
-
 				<View   android:id="@+id/rectangle1"
 					android:background="@drawable/rectangle1_shape"
 					 android:layout_marginStart="58dp"
@@ -239,12 +225,12 @@
 				</RelativeLayout>
 
 
-				<RelativeLayout android:id="@+id/password"
-					android:layout_marginTop="379dp"
+				<RelativeLayout
+					android:id="@+id/password"
+					android:layout_width="261dp"
+					android:layout_height="38dp"
 					android:layout_marginStart="80.59dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
+					android:layout_marginTop="379dp">
 
 
 					<EditText
@@ -252,7 +238,7 @@
 						android:layout_width="197dp"
 						android:layout_height="wrap_content"
 						android:layout_alignParentEnd="true"
-						android:layout_marginEnd="81dp"
+						android:layout_marginEnd="34dp"
 						android:layout_marginBottom="127dp"
 						android:hint="Password"
 						android:textAlignment="center"
@@ -260,45 +246,48 @@
 						android:textColorHint="#868686"
 						android:textSize="12sp" />
 
-					<RelativeLayout android:id="@+id/____icon__lock_outline_"
-						android:layout_marginTop="0dp"
-						android:layout_marginStart="0dp"
+					<RelativeLayout
+						android:id="@+id/____icon__lock_outline_"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						>
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp">
 
-						<ImageView android:id="@+id/vector_ek14"
-							android:src="@drawable/vector_ek14"
-							android:contentDescription="vector_ek14"
-							 android:alpha="0"
+						<ImageView
+							android:id="@+id/vector_ek14"
+							android:layout_width="24.87dp"
+							android:layout_height="27dp"
 							android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
-							android:layout_width="24.87dp"
-							android:layout_height="27dp" />
+							android:alpha="0"
+							android:contentDescription="vector_ek14"
+							android:src="@drawable/vector_ek14" />
 
 
-						<RelativeLayout android:id="@+id/group_ek3"
-							android:layout_marginTop="2dp"
-							android:layout_marginStart="4dp"
+						<RelativeLayout
+							android:id="@+id/group_ek3"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							>
+							android:layout_marginStart="4dp"
+							android:layout_marginTop="2dp">
 
-							<ImageView android:id="@+id/vector_ek15"
-								android:src="@drawable/vector_ek15"
-								android:contentDescription="vector_ek15"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
+							<ImageView
+								android:id="@+id/vector_ek15"
 								android:layout_width="16.58dp"
-								android:layout_height="22.38dp" />
+								android:layout_height="22.38dp"
+								android:layout_marginStart="0dp"
+								android:layout_marginTop="0dp"
+								android:contentDescription="vector_ek15"
+								android:src="@drawable/vector_ek15" />
 
-							<ImageView android:id="@+id/vector_ek16"
-								android:src="@drawable/vector_ek16"
-								android:contentDescription="vector_ek16"
-								 android:layout_marginStart="5dp"
-								android:layout_marginTop="11dp"
+							<ImageView
+								android:id="@+id/vector_ek16"
 								android:layout_width="6.22dp"
-								android:layout_height="6.75dp" />
+								android:layout_height="6.75dp"
+								android:layout_marginStart="5dp"
+								android:layout_marginTop="11dp"
+								android:contentDescription="vector_ek16"
+								android:src="@drawable/vector_ek16" />
 
 						</RelativeLayout>
 
@@ -307,19 +296,20 @@
 				</RelativeLayout>
 
 
-				<RelativeLayout android:id="@+id/repeatpassword"
-					android:layout_marginTop="421dp"
+				<RelativeLayout
+					android:id="@+id/repeatpassword"
+					android:layout_width="255dp"
+					android:layout_height="38dp"
 					android:layout_marginStart="81.58dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
+					android:layout_marginTop="421dp">
+
 
 					<EditText
 						android:id="@+id/et_repeat_password_sign_up"
 						android:layout_width="197dp"
 						android:layout_height="wrap_content"
 						android:layout_alignParentEnd="true"
-						android:layout_marginEnd="81dp"
+						android:layout_marginEnd="28dp"
 						android:layout_marginBottom="127dp"
 						android:hint="Repeat Password"
 						android:textAlignment="center"
@@ -327,46 +317,48 @@
 						android:textColorHint="#868686"
 						android:textSize="12sp" />
 
-
-					<RelativeLayout android:id="@+id/____icon__lock_outline__ek1"
-						android:layout_marginTop="0dp"
-						android:layout_marginStart="0dp"
+					<RelativeLayout
+						android:id="@+id/____icon__lock_outline__ek1"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
-						>
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="0dp">
 
-						<ImageView android:id="@+id/vector_ek17"
-							android:src="@drawable/vector_ek17"
-							android:contentDescription="vector_ek17"
-							 android:alpha="0"
+						<ImageView
+							android:id="@+id/vector_ek17"
+							android:layout_width="24.87dp"
+							android:layout_height="27dp"
 							android:layout_marginStart="0dp"
 							android:layout_marginTop="0dp"
-							android:layout_width="24.87dp"
-							android:layout_height="27dp" />
+							android:alpha="0"
+							android:contentDescription="vector_ek17"
+							android:src="@drawable/vector_ek17" />
 
 
-						<RelativeLayout android:id="@+id/group_ek4"
-							android:layout_marginTop="2dp"
-							android:layout_marginStart="4dp"
+						<RelativeLayout
+							android:id="@+id/group_ek4"
 							android:layout_width="wrap_content"
 							android:layout_height="wrap_content"
-							>
+							android:layout_marginStart="4dp"
+							android:layout_marginTop="2dp">
 
-							<ImageView android:id="@+id/vector_ek18"
-								android:src="@drawable/vector_ek18"
-								android:contentDescription="vector_ek18"
-								 android:layout_marginStart="0dp"
-								android:layout_marginTop="0dp"
+							<ImageView
+								android:id="@+id/vector_ek18"
 								android:layout_width="16.58dp"
-								android:layout_height="22.38dp" />
+								android:layout_height="22.38dp"
+								android:layout_marginStart="0dp"
+								android:layout_marginTop="0dp"
+								android:contentDescription="vector_ek18"
+								android:src="@drawable/vector_ek18" />
 
-							<ImageView android:id="@+id/vector_ek19"
-								android:src="@drawable/vector_ek19"
-								android:contentDescription="vector_ek19"
-								 android:layout_marginStart="5dp"
-								android:layout_marginTop="11dp"
+							<ImageView
+								android:id="@+id/vector_ek19"
 								android:layout_width="6.22dp"
-								android:layout_height="6.75dp" />
+								android:layout_height="6.75dp"
+								android:layout_marginStart="5dp"
+								android:layout_marginTop="11dp"
+								android:contentDescription="vector_ek19"
+								android:src="@drawable/vector_ek19" />
 
 						</RelativeLayout>
 
@@ -436,15 +428,6 @@
 
 				</RelativeLayout>
 
-
-				<RelativeLayout android:id="@+id/frame_4"
-					android:layout_marginTop="57dp"
-					android:layout_marginStart="-23dp"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					>
-
-				</RelativeLayout>
 
 			</RelativeLayout>
 
