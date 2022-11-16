@@ -1,0 +1,304 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		frame_8
+	 *	@date 		Wednesday 16th of November 2022 01:54:44 PM
+	 *	@title 		Login
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView
+		android:id="@+id/frame_8"
+		android:layout_width="392dp"
+		android:layout_height="731dp">
+
+		<RelativeLayout
+			android:id="@+id/content_container"
+			android:layout_width="392dp"
+			android:layout_height="731dp">
+
+
+			<RelativeLayout
+				android:id="@+id/page_frame_8_ek1"
+				android:layout_width="392dp"
+				android:layout_height="731dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp">
+
+
+				<Button
+					android:id="@+id/btn_volver4"
+					android:layout_width="138dp"
+					android:layout_height="50dp"
+					android:layout_alignBottom="@+id/dondeloencontre"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="43dp"
+					android:layout_marginTop="653dp"
+					android:layout_marginEnd="221dp"
+					android:layout_marginBottom="-65dp"
+					android:fontFamily="@font/poppins"
+					android:text="Volver" />
+
+				<Button
+					android:id="@+id/btn_guardar3"
+					android:layout_width="138dp"
+					android:layout_height="50dp"
+					android:layout_alignBottom="@+id/dondeloencontre"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="216dp"
+					android:layout_marginTop="652dp"
+					android:layout_marginEnd="41dp"
+					android:layout_marginBottom="-66dp"
+					android:fontFamily="@font/poppins"
+					android:text="Guardar" />
+
+				<View
+					android:id="@+id/recatangle1"
+					android:layout_width="394dp"
+					android:layout_height="97dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:background="#000000" />
+
+				<TextView
+					android:id="@+id/bienvenido"
+					android:layout_width="215dp"
+					android:layout_height="53dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="40dp"
+					android:layout_marginTop="26dp"
+					android:fontFamily="@font/poppins"
+					android:gravity="center"
+					android:text="Mi Perfil"
+					android:textColor="#FFFFFF"
+					android:textSize="20sp" />
+
+				<ImageView
+					android:id="@+id/logo_4_1_ek6"
+					android:layout_width="65dp"
+					android:layout_height="58dp"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="265dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="15dp"
+					android:contentDescription="logo_4_1_ek5"
+					android:src="@drawable/logo_4_1_ek5"
+					tools:src="@drawable/logo_4_1_ek5" />
+
+				<RelativeLayout
+					android:id="@+id/telefonoperfil"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="471dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Telefono"
+						android:textColor="#000000"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/rectangle_6"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:fontFamily="@font/poppins"
+						android:textColor="#000000" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/contactoperfil"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="561dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek1"
+						android:layout_width="338dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="20dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Metodo de contacto preferido"
+						android:textColor="#000000"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/rectangle_6_ek1"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:fontFamily="@font/poppins"
+						android:textColor="#000000" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/direccionpefil"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="381dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek2"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Dirección"
+						android:textColor="#000000"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/rectangle_6_ek2"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:fontFamily="@font/poppins"
+						android:textColor="#000000" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/tipodedocumentoperfil"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="291dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek3"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Cedula"
+						android:textColor="#000000"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/rectangle_6_ek3"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:fontFamily="@font/poppins"
+						android:textColor="#000000" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/apellidosdeldueno"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="196dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek4"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Apellidos"
+						android:textColor="#000000"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/rectangle_6_ek4"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:fontFamily="@font/poppins"
+						android:textColor="#000000" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/nombresdeldueno"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="106dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek5"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Nombres"
+						android:textColor="#000000"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/rectangle_6_ek5"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:fontFamily="@font/poppins"
+						android:textColor="#000000" />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>

@@ -53,7 +53,7 @@ public class activity_main extends Activity {
 		setContentView(R.layout.activity_main);
 
 		
-		_bg__frame_1_ek2 = (View) findViewById(R.id._bg__frame_1_ek2);
+
 
 		rectangle1_ek1 = (View) findViewById(R.id.rectangle1_ek1);
 		signin = (TextView) findViewById(R.id.signin);

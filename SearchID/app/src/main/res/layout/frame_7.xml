@@ -1,0 +1,288 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent" android:layout_height="wrap_content" >
+	<!-- 
+	/*
+	 *	This content is generated from the API File Info.
+	 *	(Alt+Shift+Ctrl+I).
+	 *
+	 *	@desc 		
+	 *	@file 		frame_8
+	 *	@date 		Wednesday 16th of November 2022 01:54:44 PM
+	 *	@title 		Login
+	 *	@author 	
+	 *	@keywords 	
+	 *	@generator 	Export Kit v1.3.figma
+	 *
+	 */
+	-->
+	<ScrollView
+		android:id="@+id/frame_7"
+		android:layout_width="392dp"
+		android:layout_height="731dp">
+
+		<RelativeLayout
+			android:id="@+id/content_container"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+
+			<RelativeLayout
+				android:id="@+id/page_frame_7_ek1"
+				android:layout_width="392dp"
+				android:layout_height="731dp"
+				android:layout_marginStart="0dp"
+				android:layout_marginTop="0dp">
+
+				<ImageView
+					android:id="@+id/__img_miperfil_ek5"
+					android:layout_width="170dp"
+					android:layout_height="58dp"
+					android:layout_marginStart="216dp"
+					android:layout_marginTop="661dp"
+					android:contentDescription="__img_miperfil_ek4"
+					android:src="@drawable/__img_miperfil_ek4" />
+
+				<Button
+					android:id="@+id/btn_miPerfilFrame"
+					android:layout_width="164dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="219dp"
+					android:layout_marginTop="666dp"
+					android:background="#00000000" />
+
+				<Button
+					android:id="@+id/btn_volver5"
+					android:layout_width="138dp"
+					android:layout_height="50dp"
+					android:layout_alignBottom="@+id/dondeloencontre"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="44dp"
+					android:layout_marginTop="599dp"
+					android:layout_marginEnd="220dp"
+					android:layout_marginBottom="-65dp"
+					android:fontFamily="@font/poppins"
+					android:text="Volver" />
+
+				<Button
+					android:id="@+id/btn_guardar"
+					android:layout_width="138dp"
+					android:layout_height="50dp"
+					android:layout_alignBottom="@+id/dondeloencontre"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="212dp"
+					android:layout_marginTop="599dp"
+					android:layout_marginEnd="45dp"
+					android:layout_marginBottom="-66dp"
+					android:fontFamily="@font/poppins"
+					android:text="Guardar" />
+
+				<View
+					android:id="@+id/recatangle1_ek1"
+					android:layout_width="394dp"
+					android:layout_height="118dp"
+					android:layout_marginStart="0dp"
+					android:layout_marginTop="0dp"
+					android:background="#000000" />
+
+				<ImageView
+					android:id="@+id/logo_4_1_ek4"
+					android:layout_width="65dp"
+					android:layout_height="58dp"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentEnd="true"
+					android:layout_marginStart="265dp"
+					android:layout_marginTop="20dp"
+					android:layout_marginEnd="15dp"
+					android:contentDescription="logo_4_1_ek5"
+					android:src="@drawable/logo_4_1_ek5"
+					tools:src="@drawable/logo_4_1_ek5" />
+
+				<TextView
+					android:id="@+id/bienvenido_ek1"
+					android:layout_width="254dp"
+					android:layout_height="83dp"
+					android:layout_gravity="center_horizontal|center"
+					android:layout_marginLeft="40dp"
+					android:layout_marginTop="26dp"
+					android:fontFamily="@font/poppins"
+					android:gravity="center"
+					android:text="Mis documentos registrados"
+					android:textColor="#FFFFFF"
+					android:textSize="20sp" />
+
+
+				<RelativeLayout
+					android:id="@+id/misdocsotro"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="504dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek6"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Otro"
+						android:textColor="@color/recatangle1_color"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/misDocsOtroEDTXT"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:backgroundTint="#D9D9D9"
+						android:fontFamily="@font/poppins" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/misdocslibreta"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="414dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek7"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Libreta Militar"
+						android:textColor="@color/recatangle1_color"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/misDocsLibreta"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:backgroundTint="#D9D9D9"
+						android:fontFamily="@font/poppins" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/misdocscarnet"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="324dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek8"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Carnet"
+						android:textColor="@color/recatangle1_color"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/misDocsCarnet"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:backgroundTint="#D9D9D9"
+						android:fontFamily="@font/poppins" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/misdocslicencia"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="229dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek9"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Licencia"
+						android:textColor="@color/recatangle1_color"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/misDocsLicencia"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:backgroundTint="#D9D9D9"
+						android:fontFamily="@font/poppins" />
+
+				</RelativeLayout>
+
+
+				<RelativeLayout
+					android:id="@+id/misdocscedula"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="11dp"
+					android:layout_marginTop="139dp">
+
+					<TextView
+						android:id="@+id/nombre_del_due_o_ek10"
+						android:layout_width="275dp"
+						android:layout_height="45dp"
+						android:layout_gravity="center_horizontal|center"
+						android:layout_marginLeft="43dp"
+						android:layout_marginTop="0dp"
+						android:fontFamily="@font/poppins"
+						android:gravity="center"
+						android:text="Cedula"
+						android:textColor="@color/recatangle1_color"
+						android:textSize="16sp" />
+
+					<EditText
+						android:id="@+id/misDocsCedula"
+						android:layout_width="371dp"
+						android:layout_height="49dp"
+						android:layout_marginStart="0dp"
+						android:layout_marginTop="34dp"
+						android:background="#D9D9D9"
+						android:backgroundTint="#D9D9D9"
+						android:fontFamily="@font/poppins" />
+
+				</RelativeLayout>
+
+			</RelativeLayout>
+
+
+		</RelativeLayout>
+
+	</ScrollView>
+</HorizontalScrollView>
