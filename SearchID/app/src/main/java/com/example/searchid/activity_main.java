@@ -22,6 +22,7 @@ import android.os.Bundle;
 
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.ImageView;
 
@@ -52,9 +53,6 @@ public class activity_main extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
-		
-
-
 		rectangle1_ek1 = (View) findViewById(R.id.rectangle1_ek1);
 		signin = (TextView) findViewById(R.id.signin);
 		vector_ek20 = (ImageView) findViewById(R.id.vector_ek20);
@@ -63,13 +61,13 @@ public class activity_main extends Activity {
 		vector_ek23 = (ImageView) findViewById(R.id.vector_ek23);
 		vector_ek24 = (ImageView) findViewById(R.id.vector_ek24);
 		vector_ek25 = (ImageView) findViewById(R.id.vector_ek25);
-		rectangle2_ek2 = (View) findViewById(R.id.btn_submit);
+		rectangle2_ek2 = (Button) findViewById(R.id.btn_submit);
 		forgotpassword = (TextView) findViewById(R.id.btn_forgotpassword);
 		logo_ek1 = (ImageView) findViewById(R.id.logo_ek1);
-	
-		
+
+
 		//custom code goes here
-	
+
 	}
 }
 	

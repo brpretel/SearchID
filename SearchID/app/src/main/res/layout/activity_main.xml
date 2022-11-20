@@ -2,21 +2,7 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
-	<!--
-    /*
-     *	This content is generated from the API File Info.
-     *	(Alt+Shift+Ctrl+I).
-     *
-     *	@desc
-     *	@file 		frame_3
-     *	@date 		Friday 11th of November 2022 04:49:31 PM
-     *	@title 		Login
-     *	@author
-     *	@keywords
-     *	@generator 	Export Kit v1.3.figma
-     *
-     */
-    -->
+
 	<ScrollView
 		android:id="@+id/frame_1"
 		android:layout_width="wrap_content"
