@@ -7,6 +7,8 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.viewModels
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
 
 
 class MainActivity : AppCompatActivity() {
@@ -38,9 +40,19 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        setupObservables()
+    }
+
     fun onLogin(username: String, password: String){
         vm.onLogin(username, password)
-        vm.getAllPosts()
-        startActivity(Intent(this, Pantalla2::class.java))
+        setupObservables()
+    }
+
+    fun setupObservables(){
+            vm.loogedIn.observe(this, Observer { loogedIn ->
+                if(loogedIn) startActivity(Intent(this, Pantalla2::class.java))
+            })
     }
 }

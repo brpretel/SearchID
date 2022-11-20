@@ -1,7 +1,10 @@
 package com.example.searchid
 
 import android.content.Intent
+import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat.startActivity
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.searchid.api.Documents
 import com.example.searchid.api.SearchidApiService
@@ -11,6 +14,12 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class MainViewModel: ViewModel() {
+
+    var loogedIn = MutableLiveData<Boolean>()
+
+    private  var accestoken: String = ""
+    private var currentUsername: String? = null
+    private var currentUserId: Int? = null
 
     init {
        // getAllPosts()
@@ -42,8 +51,19 @@ class MainViewModel: ViewModel() {
                     response: Response<UserLoginResponse>
                 ) {
                     if (response.isSuccessful){
-                        getAllPosts()
+                        val list= response.body()
+                        accestoken = response.body()?.accesToken.toString()
+                        currentUsername= response.body()?.username
+                        currentUserId = response.body()?.user_Id
 
+                        if (accestoken.equals("none")){
+                            print("Intenta de nuevo")
+                        }else{
+                            loogedIn.value = true
+                            getAllPosts()
+
+
+                        }
                     }
                 }
 

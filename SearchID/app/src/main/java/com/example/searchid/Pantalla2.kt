@@ -7,6 +7,6 @@ import com.example.searchid.R
 class Pantalla2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.frame_2)
+        setContentView(R.layout.frame_3)
     }
 }
