@@ -16,7 +16,21 @@
 		android:usesCleartextTraffic="true"
 		tools:targetApi="tiramisu">
 		<activity
-			android:name=".Pantalla2"
+			android:name=".SignUp"
+			android:exported="false">
+			<meta-data
+				android:name="android.app.lib_name"
+				android:value="" />
+		</activity>
+		<activity
+			android:name=".GenerateReport"
+			android:exported="false">
+			<meta-data
+				android:name="android.app.lib_name"
+				android:value="" />
+		</activity>
+		<activity
+			android:name=".User_dashboard"
 			android:exported="false">
 			<meta-data
 				android:name="android.app.lib_name"
