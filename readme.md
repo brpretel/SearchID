@@ -1,11 +1,13 @@
 # Search ID
 
 Diseño y creación de una aplicación móvil para la búsqueda y reporte de documentos perdidos. 
-<img src="https://github.com/brpretel/SearchID/blob/master/Images/logo.png">   
-Figura 1. Logo
-Brian Samir Pretel Plata
-Ivan Santiago Galindo Orjuela
-Universidad EAN – Facultad de Ingeniería – Estructura De Datos
+
+<img src="https://github.com/brpretel/SearchID/blob/master/Images/logo.png" width="400" height="400">   
+
+Figura 1. Logo\
+Brian Samir Pretel Plata\
+Ivan Santiago Galindo Orjuela\
+Universidad EAN – Facultad de Ingeniería – Estructura De Datos\
 
 ### INTRODUCCIÓN
 El presente proyecto tiene como principal objetivo la creación e implementación de una aplicación móvil que pretende solventar una problemática ocasional, la pérdida de los documentos en lugares públicos. Esta herramienta estará diseñada para tener la posibilidad de reportar documentos perdidos, y de la misma forma, facilitar su hallazgo por parte del propietario. 
