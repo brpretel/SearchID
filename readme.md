@@ -1,7 +1,8 @@
 # Search ID
 
 Diseño y creación de una aplicación móvil para la búsqueda y reporte de documentos perdidos. 
-   Figura 1. Logo
+<img src="https://github.com/brpretel/SearchID/blob/master/Images/logo.png">   
+Figura 1. Logo
 Brian Samir Pretel Plata
 Ivan Santiago Galindo Orjuela
 Universidad EAN – Facultad de Ingeniería – Estructura De Datos
