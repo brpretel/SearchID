@@ -45,8 +45,10 @@
 					android:id="@+id/__img_reportarundocumento"
 					android:layout_width="117dp"
 					android:layout_height="115dp"
+					android:layout_alignEnd="@+id/btn_reporarUnDocumento"
 					android:layout_marginStart="16dp"
 					android:layout_marginTop="134dp"
+					android:layout_marginEnd="2dp"
 					android:src="@drawable/__img_reportarundocumento" />
 
 				<Button
@@ -55,7 +57,7 @@
 					android:layout_height="114dp"
 					android:layout_alignParentStart="true"
 					android:layout_alignParentTop="true"
-					android:layout_marginStart="16dp"
+					android:layout_marginStart="58dp"
 					android:layout_marginTop="135dp"
 					android:background="#00000000" />
 
@@ -63,8 +65,10 @@
 					android:id="@+id/__img_buscardocumento2"
 					android:layout_width="117dp"
 					android:layout_height="113dp"
+					android:layout_alignEnd="@+id/btn_buscarUnReport"
 					android:layout_marginStart="132dp"
 					android:layout_marginTop="134dp"
+					android:layout_marginEnd="2dp"
 					android:contentDescription="__img_buscardocumento"
 					android:src="@drawable/__img_buscardocumento" />
 
@@ -74,28 +78,9 @@
 					android:layout_height="114dp"
 					android:layout_alignParentStart="true"
 					android:layout_alignParentTop="true"
-					android:layout_marginStart="133dp"
+					android:layout_marginStart="215dp"
 					android:layout_marginTop="133dp"
 					android:background="#00000000" />
-
-				<Button
-					android:id="@+id/btn_misDocumentos"
-					android:layout_width="117dp"
-					android:layout_height="114dp"
-					android:layout_alignParentStart="true"
-					android:layout_alignParentTop="true"
-					android:layout_marginStart="257dp"
-					android:layout_marginTop="136dp"
-					android:background="#00000000" />
-
-				<ImageView
-					android:id="@+id/__img_misdocumentos"
-					android:layout_width="102dp"
-					android:layout_height="117dp"
-					android:layout_marginStart="260dp"
-					android:layout_marginTop="134dp"
-					android:contentDescription="__img_misdocumentos"
-					android:src="@drawable/__img_misdocumentos" />
 
 				<ImageView
 					android:id="@+id/logo_4_1_ek5"

@@ -29,7 +29,6 @@ class User_dashboard : AppCompatActivity() {
         val logoutbtn = findViewById<Button>(R.id.btn_miPerfil)
 
         val reportbtn = findViewById<Button>(R.id.btn_reporarUnDocumento)
-        val docu_btn = findViewById<Button>(R.id.btn_misDocumentos)
         val ver_report = findViewById<Button>(R.id.btn_buscarUnReport)
 
         val token = intent.getStringExtra("token")
@@ -74,8 +73,6 @@ class User_dashboard : AppCompatActivity() {
             startActivity(it)})
         }
 
-        /*See list of reports*/
-        docu_btn.setOnClickListener { startActivity(Intent(this, RegisterDocument::class.java)) }
 
         /*Logout function*/
         logoutbtn.setOnClickListener {
