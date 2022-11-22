@@ -128,7 +128,7 @@ Es una aplicación web que permite el diseño de interfaces gráficas de manera 
 **6.	MySQL**
  
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/mysql.png">
-Figura 7. LogoMySQL \
+Figura 7. LogoMySQL 
 Utilizado para el correcto almacenamiento de datos de forma segura y consistente. Se establece de forma remota con un servidor capaz de encriptar y desencriptar datos, los mismos que serán implementados en la aplicación móvil. Es fácil de usar y permite al administrador el simplificar el uso de las bases de datos. 
 
 ## ARQUITECTURA DE SOFTWARE
