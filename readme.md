@@ -128,7 +128,7 @@ Es una aplicación web que permite el diseño de interfaces gráficas de manera 
 **6.	MySQL**
  
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/mysql.png">
-Figura 7. LogoMySQL\
+Figura 7. LogoMySQL \
 Utilizado para el correcto almacenamiento de datos de forma segura y consistente. Se establece de forma remota con un servidor capaz de encriptar y desencriptar datos, los mismos que serán implementados en la aplicación móvil. Es fácil de usar y permite al administrador el simplificar el uso de las bases de datos. 
 
 ## ARQUITECTURA DE SOFTWARE
@@ -141,11 +141,11 @@ El proyecto está basado en el uso de "Modelo–vista–controlador" (MVC) ya qu
 Una interfaz creada inicialmente en Figma para ser posteriormente adaptada a Android Studio, esta interfaz contiene los colores representativos de la marca y fue diseñada para hacer el uso del programa mas sencillo a los ojos del usuario.
  
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/signup.png"> 
-Figura 8. Sign Up de SearchID \
+Figura 8. Sign Up de SearchID 
   <img src="https://github.com/brpretel/SearchID/blob/master/Images/Dashboard.png">
-Figura 9. Dashboard de SearchID \
+Figura 9. Dashboard de SearchID 
   <img src="https://github.com/brpretel/SearchID/blob/master/Images/Buscar%20documento.png">
-Figura 10. Pantalla de buscar Documentos \
+Figura 10. Pantalla de buscar Documentos 
 
 ## RESULTADOS Y CONCLUSIONES
 Es posible evidenciar el correcto funcionamiento de la aplicación, siendo esta capaz de almacenar los datos correctamente y así mismo mostrarlos sin mayor inconveniente. Los requisitos establecidos se cumplen a toda cabalidad y no existen dificultades que pongan en riesgo el correcto funcionamiento de los flujos de datos. 
