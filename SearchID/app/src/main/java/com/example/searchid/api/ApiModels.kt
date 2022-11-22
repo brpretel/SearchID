@@ -23,8 +23,24 @@ data class  UserSignup(
 
 /*Elementos a usar como header para verificar si el usuario esta en sesion*/
 data class UserLoginResponse(
-    @SerializedName("user_id") val user_Id: Int,
-    val username: String,
-    @SerializedName("token")val accesToken: String,
+    @SerializedName("user_id") val user_Id: Int?,
+    @SerializedName("user_name") val username : String,
+    @SerializedName("token") val accesstoken: String
 
+)
+
+/*Datos que contiene los Reports*/
+data class Reports(
+    val id: Int,
+    val document_number: String,
+)
+
+
+data class CreateReport(
+    val document_number: String
+)
+
+data class CreateReportResponse(
+    val document_number: String,
+    @SerializedName("owner_report_id") val userId: Int
 )

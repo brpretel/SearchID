@@ -1,20 +1,6 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent" android:layout_height="wrap_content" >
-    <!--
-    /*
-     *	This content is generated from the API File Info.
-     *	(Alt+Shift+Ctrl+I).
-     *
-     *	@desc
-     *	@file 		frame_8
-     *	@date 		Wednesday 16th of November 2022 01:54:44 PM
-     *	@title 		Login
-     *	@author
-     *	@keywords
-     *	@generator 	Export Kit v1.3.figma
-     *
-     */
-    -->
+
     <ScrollView
         android:id="@+id/frame_7"
         android:layout_width="392dp"
@@ -54,7 +40,6 @@
                     android:id="@+id/btn_volver5"
                     android:layout_width="138dp"
                     android:layout_height="50dp"
-                    android:layout_alignBottom="@+id/dondeloencontre"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
@@ -69,7 +54,6 @@
                     android:id="@+id/btn_guardar"
                     android:layout_width="138dp"
                     android:layout_height="50dp"
-                    android:layout_alignBottom="@+id/dondeloencontre"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"

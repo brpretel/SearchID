@@ -12,38 +12,34 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class GenerateReport: AppCompatActivity() {
+
+class RegisterDocument : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.report)
+        setContentView(R.layout.register_document)
 
-        val token = intent.getStringExtra("token")
+        var cd = findViewById<EditText>(R.id.misDocsCedula)
 
-        val document_id = findViewById<EditText>(R.id.docu_num)
-        val reportbtn = findViewById<Button>(R.id.btn_reportar)
-        val btn_volver = findViewById<Button>(R.id.btn_volver)
 
-        reportbtn.setOnClickListener {
-            val docs = document_id.text.toString()
+        var btn_volv = findViewById<Button>(R.id.btn_volver5)
+        var btn_guardar = findViewById<Button>(R.id.btn_guardar)
 
-            if (docs.isEmpty()){
-                print("username no")
+        var cedula = cd.text.toString()
+        var otro = cd.text.toString()
 
-            } else{
-                createReport(docs,token!!)
-                Thread.sleep(4_000)
-                startActivity(Intent(this, User_dashboard::class.java))
-            }
-        }
-
-        btn_volver.setOnClickListener {
+        btn_volv.setOnClickListener {
             startActivity(Intent(this, User_dashboard::class.java))
         }
 
+        btn_guardar.setOnClickListener {
+            Thread.sleep(4_000)
+            startActivity(Intent(this, User_dashboard::class.java))
+            createReport(cedula,1,otro)
+        }
     }
-
-    fun createReport(document_number : String, token:String){
+    fun createReport(document_number : String, id:Int?, token:String){
 
         val report = CreateReport(document_number)
         SearchidApiService.api
@@ -55,7 +51,6 @@ class GenerateReport: AppCompatActivity() {
                 ) {
                     if (response.isSuccessful){
                         var l = response.body()
-                        print(l)
                     }
                 }
 
@@ -64,4 +59,5 @@ class GenerateReport: AppCompatActivity() {
 
             })
     }
+
 }

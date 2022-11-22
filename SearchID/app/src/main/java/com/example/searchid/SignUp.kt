@@ -16,7 +16,7 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.sign_up)
 
-        val username = findViewById<EditText>(R.id.et_repeat_password_sign_up)
+        val username = findViewById<EditText>(R.id.et_user_names)
         val first_name = findViewById<EditText>(R.id.et_first_name)
         val last_name = findViewById<EditText>(R.id.et_last_name)
         val email = findViewById<EditText>(R.id.et_email)

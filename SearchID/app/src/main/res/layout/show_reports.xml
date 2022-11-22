@@ -30,7 +30,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="0dp">
+                android:layout_marginTop="0dp"
+                >
 
                 <Button
                     android:id="@+id/btn_volver3"
@@ -93,7 +94,7 @@
                     android:layout_marginTop="26dp"
                     android:fontFamily="@font/poppins"
                     android:gravity="center"
-                    android:text="Buscar un documento"
+                    android:text="Lista de reportes"
                     android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
@@ -104,7 +105,22 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="207dp"
                     android:background="@drawable/rectangle_7_shape"
-                    android:backgroundTint="#D9D9D9" />
+                    android:backgroundTint="#D9D9D9"
+
+
+                />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Recycless"
+                    android:layout_width="355dp"
+                    android:layout_height="342dp"
+                    android:layout_alignStart="@+id/rectangle_7"
+                    android:layout_alignTop="@+id/rectangle_7"
+                    android:layout_alignBottom="@+id/rectangle_7"
+                    android:layout_marginStart="-1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginBottom="0dp" />
 
                 <TextView
                     android:id="@+id/nombre_del_due_o_ek11"

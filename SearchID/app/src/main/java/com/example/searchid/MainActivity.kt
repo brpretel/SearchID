@@ -7,12 +7,21 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
+import androidx.lifecycle.MutableLiveData
+import com.example.searchid.api.SearchidApiService
+import com.example.searchid.api.UserLoginResponse
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 
 class MainActivity : AppCompatActivity() {
 
     private val vm: MainViewModel by viewModels()
+    var accestoken: String = ""
+    var currentUsername: String? = null
+    var currentUserId: Int? = null
+    var loggedIn = MutableLiveData<Boolean>()
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
@@ -44,19 +53,39 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    override fun onResume() {
-        super.onResume()
-        setupObservables()
-    }
+    fun onLogin(username: String, password : String){
+        SearchidApiService.api
+            .login(username, password)
+            .enqueue(object : Callback<UserLoginResponse> {
+                override fun onResponse(
+                    call: Call<UserLoginResponse>,
+                    response: Response<UserLoginResponse>
+                ) {
+                    if (response.isSuccessful){
 
-    fun onLogin(username: String, password: String){
-        vm.onLogin(username, password)
-        setupObservables()
-    }
+                        if (accestoken.equals("none")){
+                            print("Intenta de nuevo")
+                        }else{
+                            loggedIn.value = true
+                            accestoken = "${response.body()?.accesstoken}".toString()
+                            currentUsername= response.body()?.username.toString()
+                            currentUserId = response.body()?.user_Id!!.toInt()
+                            setupObservables(accestoken, currentUserId!!)
+                        }
+                    }
+                }
 
-    fun setupObservables(){
-            vm.loggedIn.observe(this, Observer { loogedIn ->
-                if(loogedIn) startActivity(Intent(this, User_dashboard::class.java))
+                override fun onFailure(call: Call<UserLoginResponse>, t: Throwable) {
+                }
+
             })
+    }
+
+    fun setupObservables(x:String,y:Int){
+        startActivity(Intent(this, User_dashboard::class.java).also {
+            it.putExtra("token",x)
+            it.putExtra("id",y)
+            startActivity(it)
+        })
     }
 }

@@ -105,31 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
-                    android:layout_marginTop="504dp">
-
-                    <TextView
-                        android:id="@+id/nombre_del_due_o_ek17"
-                        android:layout_width="275dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center_horizontal|center"
-                        android:layout_marginLeft="43dp"
-                        android:layout_marginTop="0dp"
-                        android:fontFamily="@font/poppins"
-                        android:gravity="center"
-                        android:text="Donde lo encontré"
-                        android:textColor="@color/recatangle1_color"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/dondeLoEncontreEDTXT"
-                        android:layout_width="371dp"
-                        android:layout_height="49dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="34dp"
-                        android:background="#D9D9D9"
-                        android:fontFamily="@font/poppins" />
-
-                </RelativeLayout>
+                    android:layout_marginTop="504dp"/>
 
 
                 <RelativeLayout
@@ -137,31 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
-                    android:layout_marginTop="414dp">
-
-                    <TextView
-                        android:id="@+id/nombre_del_due_o_ek18"
-                        android:layout_width="275dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center_horizontal|center"
-                        android:layout_marginLeft="43dp"
-                        android:layout_marginTop="0dp"
-                        android:fontFamily="@font/poppins"
-                        android:gravity="center"
-                        android:text="Numero del documento"
-                        android:textColor="@color/recatangle1_color"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/numeroDelDocumentoEDTXT"
-                        android:layout_width="371dp"
-                        android:layout_height="49dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="34dp"
-                        android:background="#D9D9D9"
-                        android:fontFamily="@font/poppins" />
-
-                </RelativeLayout>
+                    android:layout_marginTop="414dp"/>
 
 
                 <RelativeLayout
@@ -169,31 +121,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="11dp"
-                    android:layout_marginTop="324dp">
-
-                    <TextView
-                        android:id="@+id/nombre_del_due_o_ek19"
-                        android:layout_width="275dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center_horizontal|center"
-                        android:layout_marginLeft="43dp"
-                        android:layout_marginTop="0dp"
-                        android:fontFamily="@font/poppins"
-                        android:gravity="center"
-                        android:text="Tipo de documento"
-                        android:textColor="@color/recatangle1_color"
-                        android:textSize="16sp" />
-
-                    <EditText
-                        android:id="@+id/tipoDeDocuementoEDTXT"
-                        android:layout_width="371dp"
-                        android:layout_height="49dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="34dp"
-                        android:background="#D9D9D9"
-                        android:fontFamily="@font/poppins" />
-
-                </RelativeLayout>
+                    android:layout_marginTop="324dp"/>
 
 
                 <RelativeLayout
@@ -212,12 +140,12 @@
                         android:layout_marginTop="0dp"
                         android:fontFamily="@font/poppins"
                         android:gravity="center"
-                        android:text="Apellidos del dueño"
+                        android:text="Numero del document"
                         android:textColor="@color/recatangle1_color"
                         android:textSize="16sp" />
 
                     <EditText
-                        android:id="@+id/apellidosDelDuenoEDTXT"
+                        android:id="@+id/docu_num"
                         android:layout_width="371dp"
                         android:layout_height="49dp"
                         android:layout_marginStart="0dp"

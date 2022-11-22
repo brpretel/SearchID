@@ -27,7 +27,13 @@ class User_dashboard : AppCompatActivity() {
 
         val recycleView = findViewById<RecyclerView>(R.id.MyRecycleView)
         val logoutbtn = findViewById<Button>(R.id.btn_miPerfil)
+
         val reportbtn = findViewById<Button>(R.id.btn_reporarUnDocumento)
+        val docu_btn = findViewById<Button>(R.id.btn_misDocumentos)
+        val ver_report = findViewById<Button>(R.id.btn_buscarUnReport)
+
+        val token = intent.getStringExtra("token")
+        val id = intent.getIntExtra("id", 1)
 
         /*Api call for Documnets and adapterfor recycleView*/
         SearchidApiService.api
@@ -50,8 +56,26 @@ class User_dashboard : AppCompatActivity() {
 
             })
 
+        /*Ver reports*/
+        ver_report.setOnClickListener {
+            AlertDialog.Builder(this)
+                .setTitle("View Reports")
+                .setMessage("You want to check reports?")
+                .setPositiveButton("Yes"){dialog, which -> startActivity(Intent(this, ShowReports::class.java))}
+                .setNegativeButton("Cancel"){dialog, which -> dialog.dismiss()}
+                .show()
+            }
+
+
         /*Report button action*/
-        reportbtn.setOnClickListener {startActivity(Intent(this, GenerateReport::class.java))  }
+        reportbtn.setOnClickListener {startActivity(Intent(this, GenerateReport::class.java).also {
+            it.putExtra("token",token)
+            it.putExtra("id",id)
+            startActivity(it)})
+        }
+
+        /*See list of reports*/
+        docu_btn.setOnClickListener { startActivity(Intent(this, RegisterDocument::class.java)) }
 
         /*Logout function*/
         logoutbtn.setOnClickListener {
