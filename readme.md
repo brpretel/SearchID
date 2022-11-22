@@ -93,15 +93,15 @@ Esta herramienta ha de ser tan abierta y accesible como sea posible, siempre hac
 
 ## Herramientas utilizadas
 
-**1.	Kotlin**
+**1.	Kotlin**\
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/kotlin.png">
-Figura 2. Logo Kotlin
+Figura 2. Logo Kotlin\
 Se refiere al lenguaje de programación principal para la realización de algoritmos enfocados en el sistema de operativo de Android, con una sintaxis basada en Java y que es flexible para ser usado en distintos dispositivos móviles.
 Este lenguaje es compatible con los emuladores de Android Studio, y flexible con cualquier framework necesario para tareas avanzadas de lógica de software.
 
 **2.	Python**
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/python.png">
-Figura 3. Logo Python
+Figura 3. Logo Python\
 Se trata de uno de los lenguajes mas usados en la actualidad para la programación de algoritmos, desde los más básicos, hasta los más avanzados. En esta ocasión, su uso se enfoca en la implementación y alineamiento de la API para la autenticación y almacenamiento de datos remotamente. 
 
 
@@ -109,26 +109,26 @@ Se trata de uno de los lenguajes mas usados en la actualidad para la programaci�
 
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/fastapi.png">
  
-Figura 4. Logo FastAPI
+Figura 4. Logo FastAPI\
 Uno de los frameworks más reconocidos actualmente por su facilidad para la construcción de APIs, basado en las anotaciones de tipo estándar de Python. Es preferida por su alto rendimiento y estabilidad, así mismo por la facilidad con la que se puede aprender y usar. Es rápido de programar y minimiza la longitud de código que podría evidenciarse con otras herramientas
 
 **4.	Android Studio**
 
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/androidstudio.png">
  
-Figura 5. Logo Android Studio
+Figura 5. Logo Android Studio\
 Se trata del entorno de desarrollo integrado (IDE) mas usado para la creación y edición de código enfocado en el sistema operativo Android. Permite de la misma forma la implementación de interfaces virtuales con innumerables características, para hacer la experiencia de usuario la mejor posible. Incluye la implementación de emuladores con fines de testeo, bastante práctico para los cambios al código de manera inmediata. 
 
 **5.	Figma**
 
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/figma.jpg">
-Figura 6. Logo Figma
+Figura 6. Logo Figma\
 Es una aplicación web que permite el diseño de interfaces gráficas de manera sencilla para su posterior uso en Android Studio. Se hace uso de este software al brindar flexibilidad, estabilidad y confiabilidad para los diseños que se implementarán con el fin de mejorar la experiencia e interfaz de los usuarios.
 
 **6.	MySQL**
  
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/mysql.png">
-Figura 7. LogoMySQL
+Figura 7. LogoMySQL\
 Utilizado para el correcto almacenamiento de datos de forma segura y consistente. Se establece de forma remota con un servidor capaz de encriptar y desencriptar datos, los mismos que serán implementados en la aplicación móvil. Es fácil de usar y permite al administrador el simplificar el uso de las bases de datos. 
 
 ## ARQUITECTURA DE SOFTWARE
@@ -141,11 +141,11 @@ El proyecto está basado en el uso de "Modelo–vista–controlador" (MVC) ya qu
 Una interfaz creada inicialmente en Figma para ser posteriormente adaptada a Android Studio, esta interfaz contiene los colores representativos de la marca y fue diseñada para hacer el uso del programa mas sencillo a los ojos del usuario.
  
  <img src="https://github.com/brpretel/SearchID/blob/master/Images/signup.png"> 
-Figura 8. Sign Up de SearchID
+Figura 8. Sign Up de SearchID\
   <img src="https://github.com/brpretel/SearchID/blob/master/Images/Dashboard.png">
-Figura 9. Dashboard de SearchID
+Figura 9. Dashboard de SearchID\
   <img src="https://github.com/brpretel/SearchID/blob/master/Images/Buscar%20documento.png">
-Figura 10. Pantalla de buscar Documentos
+Figura 10. Pantalla de buscar Documentos\
 
 ## RESULTADOS Y CONCLUSIONES
 Es posible evidenciar el correcto funcionamiento de la aplicación, siendo esta capaz de almacenar los datos correctamente y así mismo mostrarlos sin mayor inconveniente. Los requisitos establecidos se cumplen a toda cabalidad y no existen dificultades que pongan en riesgo el correcto funcionamiento de los flujos de datos. 
